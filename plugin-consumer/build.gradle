@@ -1,0 +1,11 @@
+buildscript {
+    dependencies {
+        classpath 'org.example.plugin:plugin:1.0'
+    }
+}
+plugins {
+   // Commenting out this line will cause the build to fail with
+   // "Cannot resolve external dependency org.example.plugin:plugin:1.0 because no repositories are defined.""
+   id 'base'
+}
+apply plugin: 'plugin.producer.greeting'

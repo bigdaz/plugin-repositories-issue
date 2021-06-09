@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        maven {
+            url "../repo"
+        }
+    }
+}
+rootProject.name = 'plugin-consumer'
